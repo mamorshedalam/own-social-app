@@ -1,0 +1,8 @@
+@media (max-width: 786px) {
+  #header .topHeader {
+    padding: 5px 0 7px !important;
+  }
+  #header .topHeader a {
+    width: 50% !important;
+  }
+}

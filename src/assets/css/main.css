@@ -1,0 +1,152 @@
+:root {
+  --c-white: #f7f5f4;
+  --c-milk: #cecaca;
+  --c-blue: #4867aa;
+  --c-dark: #646464;
+  --transition: linear 0.4s;
+  --shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  background: var(--c-milk);
+}
+a {
+  text-decoration: none !important;
+  color: var(--c-dark);
+}
+/* Header component */
+#header .topHeader {
+  background: var(--c-blue);
+  padding: 15px 0 30px;
+}
+.navMenu {
+  background: var(--c-white);
+  border-bottom: 1px solid var(--c-dark);
+  box-shadow: var(--shadow);
+}
+.navMenu .menuItem {
+  color: var(--c-blue);
+  border: 2px solid var(--c-blue);
+  transition: var(--transition);
+  text-align: center;
+  line-height: 35px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.navMenu .navActive,
+.navMenu .menuItem:hover {
+  color: var(--c-white);
+  background-color: var(--c-blue);
+  transition: var(--transition);
+}
+/* Header component end */
+
+/* Post component */
+.postContainer {
+  box-shadow: var(--shadow);
+  background-color: var(--c-white);
+  border: 1px solid var(--c-dark);
+  height: 250px;
+  padding: 15px 25px;
+  margin: 15px 0;
+}
+.postContainer .postTitle,
+.detailDiv .detailTitle {
+  font-weight: bold;
+  font-size: 21px;
+}
+.postContainer .postPara,
+.detailDiv .detailPara {
+  color: var(--c-dark);
+  font-size: 15px;
+}
+.postContainer .postBtn {
+  background-color: var(--c-blue);
+  border-color: var(--c-blue);
+  color: var(--c-white);
+  position: absolute;
+  bottom: 25px;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+/* Post component end */
+
+/* PostDetails component */
+.detailContainer .detailDiv {
+  background-color: var(--c-white);
+  border: 1px solid var(--c-dark);
+  margin: 25px 0 15px;
+  padding: 10px 20px;
+}
+.detailContainer .commentHeader {
+  font-size: 24px;
+}
+/* PostDetails component end */
+
+/* Comment component */
+.commentContainer {
+  background-color: var(--c-white);
+  border: 1px solid var(--c-dark);
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin: 5px 0;
+}
+.commentContainer .commentName {
+  color: var(--c-blue);
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.commentContainer .commentEmail {
+  color: var(--c-blue);
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.commentContainer .commentBody {
+  color: var(--c-dark);
+  font-size: 12px;
+  margin: 0;
+}
+/* Comment component end */
+
+/* UserDetails component */
+.userContainer .userDiv {
+  background-color: var(--c-white);
+  box-shadow: var(--shadow);
+  margin: 25px 0 15px;
+  padding: 15px 25px;
+}
+.userDiv .userName {
+  color: var(--c-blue);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+.userDiv .userUsername,
+.userDiv .userWebsite,
+.userDiv .userEmail,
+.userDiv .userPhone{
+  font-size: 14px;
+  margin: 0;
+}
+.userDiv .userWebsite{
+  color: var(--c-blue)
+}
+.userDiv .userEmail,
+.userDiv .userPhone{
+  font-weight: bold;
+  padding: 5px 0;
+}
+.userDiv .userCompany{
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+/* UserDetails component end */
